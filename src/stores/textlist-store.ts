@@ -5,8 +5,8 @@ import { localStore } from './localstorage-store';
 const list = localStore<string[]>("textlist", []);
 
 export const textlist = {
-  ...list,
-  clear: () => list.set([])
+	...list,
+	clear: () => list.set([])
 };
 
 // export const isLoggedIn = derived(
