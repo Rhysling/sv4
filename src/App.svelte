@@ -1,6 +1,6 @@
 <script lang="ts">
-	import svelteLogo from "./assets/svelte.svg";
-	import viteLogo from "/vite.svg";
+	import svelteLogo from "/assets/img/svelte.svg";
+	import viteLogo from "/assets/img/vite.svg";
 
 	import Counter from "./components/Counter.svelte";
 	import TextList from "./components/TextList.svelte";
@@ -25,7 +25,7 @@
 		<TextList />
 	</div>
 
-	<p class="purple">
+	<p>
 		Check out <a
 			href="https://github.com/sveltejs/kit#readme"
 			target="_blank"

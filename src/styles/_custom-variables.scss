@@ -1,8 +1,7 @@
 // Set your brand colors
 
-$text-color: rgba(255, 255, 255, 0.87);
-$background-color: #242424;
-$text-color-light: #213547;
+$text-color: #213547;
+$background-color: #eeeeee;
 $background-color-light: #eeeeee;
 
 
@@ -25,3 +24,5 @@ $bp-small: 560px;
 $link: $main-color;
 $link-visited: $main-color;
 $link-hover: darken($main-color, 15%);
+
+$button-hover: #646cff;
