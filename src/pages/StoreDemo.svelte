@@ -1,8 +1,6 @@
 <script lang="ts">
-	import { randomStore } from "../stores/random-store";
+	import { myRandomStore as rs } from "../stores/my-random-store";
 	import TextList from "../components/TextList.svelte";
-
-	let rs = randomStore(123);
 </script>
 
 <h1>Demonstrate Stores</h1>

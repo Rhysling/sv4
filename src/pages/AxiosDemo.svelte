@@ -2,6 +2,7 @@
 	import { type AxiosError, type AxiosResponse } from "axios";
 	import axios from "axios";
 	import { weatherApiKey } from "../secrets/keys";
+	import { myRandomStore as rs } from "../stores/my-random-store";
 
 	let place = "";
 	let message = "";
@@ -31,6 +32,16 @@
 	};
 </script>
 
+<h1>Demonstrate Random Store</h1>
+<div class="random">
+	<div>Result = {$rs}</div>
+	<div>
+		<button type="button" on:click|preventDefault={() => rs.add(3)}
+			>Add 3</button
+		>
+	</div>
+</div>
+
 <h1>Demonstrate Axios</h1>
 
 <div>
@@ -48,6 +59,14 @@
 
 	h1 {
 		margin: 2rem 0;
+	}
+
+	.random {
+		border-width: 1px 0;
+		border-style: solid;
+		border-color: black;
+		background-color: pink;
+		padding: 2rem;
 	}
 
 	@media only screen and (max-width: $bp-small) {

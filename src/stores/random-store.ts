@@ -4,10 +4,11 @@ import { writable } from 'svelte/store';
 
 export const randomStore = (initial: number) => {
 
-	const { subscribe, set } = writable<number>(initial);
+	const { subscribe, set, update } = writable<number>(initial);
 
 	return {
 		subscribe,
-		run: () => set(Math.floor(Math.random() * 100))
+		run: () => set(Math.floor(Math.random() * 100)),
+		add: (n: number) => update((v) => v + n)
 	}
 } 
