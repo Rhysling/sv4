@@ -22,10 +22,11 @@ let getBaseRoutes = (): Route => {
 				children: []
 			},
 			{
-				title: "TBD",
-				page: "TBD",
-				path: "/tbd",
-				isHidden: true,
+				title: "Animation Demo",
+				page: "AnimDemo",
+				navName: "Animation",
+				path: "/anim-demo",
+				isHidden: false,
 				children: []
 			}
 		]

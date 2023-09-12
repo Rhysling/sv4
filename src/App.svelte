@@ -6,6 +6,7 @@
 	import Home from "./pages/Home.svelte";
 	import StoreDemo from "./pages/StoreDemo.svelte";
 	import AxiosDemo from "./pages/AxiosDemo.svelte";
+	import AnimDemo from "./pages/AnimDemo.svelte";
 
 	import { currentRoute, navFromUrl } from "./stores/route-store.js";
 
@@ -20,6 +21,7 @@
 		Home,
 		StoreDemo,
 		AxiosDemo,
+		AnimDemo,
 	};
 
 	$: {
@@ -44,6 +46,7 @@
 
 	main {
 		background-color: #fff;
+		min-width: 500px;
 		max-width: 800px;
 		margin: 1rem auto;
 		padding: 1em;

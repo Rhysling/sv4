@@ -2,15 +2,15 @@
 	import { type AxiosError, type AxiosResponse } from "axios";
 	import axios from "axios";
 	import { weatherApiKey } from "../secrets/keys";
-	import { myRandomStore as rs } from "../stores/my-random-store";
+	//import { myRandomStore as rs } from "../stores/my-random-store";
+	import rs from "../stores/my-random-store";
 
 	let place = "";
 	let message = "";
 	let res: WxRealtime | undefined;
 
 	let loadWeather = () => {
-		place = place || "";
-		place = place.trim();
+		place = (place || "").trim();
 		if (place == "") {
 			message = "Place is missing.";
 			return;
@@ -32,7 +32,7 @@
 	};
 </script>
 
-<h1>Demonstrate Random Store</h1>
+<h2>Demonstrate Random Store</h2>
 <div class="random">
 	<div>Result = {$rs}</div>
 	<div>
@@ -42,7 +42,7 @@
 	</div>
 </div>
 
-<h1>Demonstrate Axios</h1>
+<h2>Demonstrate Axios</h2>
 
 <div>
 	Where: <input type="text" bind:value={place} />
@@ -57,7 +57,7 @@
 <style lang="scss">
 	@import "../styles/_custom-variables.scss";
 
-	h1 {
+	h2 {
 		margin: 2rem 0;
 	}
 
